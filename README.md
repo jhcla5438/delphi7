@@ -1,7 +1,7 @@
- delphi7
-使用Delphi7开发的工具
+#delphi7
 
-提交的步骤
+
+#提交的步骤
 git status
 
 delphi_game_crack.pas被上传的文件
