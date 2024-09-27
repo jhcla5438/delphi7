@@ -2,28 +2,36 @@
 
 
 #提交的步骤
+
 #git status
 
-delphi_game_crack.pas被上传的文件
-git add delphi_game_crack.pas 
+#delphi_game_crack.pas被上传的文件
 
-添加说明
-git commit -m "第1次修改并提交"
+#git add delphi_game_crack.pas 
 
-提交至 main目录
-git push origin main
+#添加说明
+
+#git commit -m "第1次修改并提交"
+
+#提交至 main目录
+
+#git push origin main
 
 ----------------------------------------------------*******
 
-修改并提交的步骤
-git status
+#修改并提交的步骤
 
-delphi_game_crack.pas被上传的文件
-git add delphi_game_crack.pas 
+#git status
 
-添加说明
-git commit -m "第二次修改并提交"
+#delphi_game_crack.pas被上传的文件
 
-提交至 main目录
-git push origin main
+#git add delphi_game_crack.pas 
+
+#添加说明
+
+#git commit -m "第二次修改并提交"
+
+#提交至 main目录
+
+#git push origin main
 
