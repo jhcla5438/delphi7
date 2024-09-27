@@ -3,7 +3,7 @@ unit game_crack;
 interface
 uses
     windows,Messages,SysUtils, Classes;
-
+//
 //被调用时,需先在此声明函数体.
 //否则被调用时提示 函数名未定义
 function readValue(gameName:string;baseAddress:DWORD):integer;//根据内存地址读取数值
