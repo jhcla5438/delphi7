@@ -6,49 +6,45 @@ uses
   SysUtils;
 
 type
-  TMyClass = class
+  aaa = class
   private
-    FValue: Integer;
+    aname: string;
+    aage: Byte;
+
   public
-    constructor Create;
-    destructor Destroy; override;
-    procedure SetValue(Value: Integer);
-    function GetValue: Integer;
+    //class的构造函数，一定要写
+    constructor create;
+    procedure setinfo(_name: string; _age: Byte);
+    function showinfo(): string;
   end;
 
-constructor TMyClass.Create;
+constructor aaa.create;
 begin
-  inherited;
-  FValue := 0;
+//  inherited;
 end;
 
-destructor TMyClass.Destroy;
+procedure aaa.setinfo(_name: string; _age: Byte);
 begin
-  inherited;
+  aname := _name;
+  aage := _age;
 end;
 
-procedure TMyClass.SetValue(Value: Integer);
+function aaa.showinfo(): string;
 begin
-  FValue := Value;
+  Writeln('name:', aname);
+  Writeln('age:', aage);
 end;
-
-function TMyClass.GetValue: Integer;
-begin
-  Result := FValue;
-end;
-
-//------------------------
 
 var
-  MyObject: TMyClass;
+  aa: aaa;
 
 begin
   try
-    MyObject := TMyClass.Create;
-    MyObject.SetValue(100);
-    Writeln('Value in the class: ', MyObject.GetValue);
+    aa := aaa.create;
+    aa.setinfo('tom', 22);
+    aa.showinfo();
   finally
-    MyObject.Free;
+    aa.Free;
   end;
   Readln;
 end.
