@@ -1,7 +1,7 @@
 # Git操作
 ### 删除远端文件
 
-git rm "Delphi-InLineHook\README - 副本.md"
+git rm "Delphi-InLineHook\README - 副本.md" 
 
 ### 添加commit注释
 
